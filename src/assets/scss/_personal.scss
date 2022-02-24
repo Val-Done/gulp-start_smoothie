@@ -1,0 +1,54 @@
+.personal {
+  &__list {
+    display: flex;
+    list-style: none;
+  
+    position: relative;
+  }
+  
+  &__item {
+    margin-right: 45px;
+  }
+  
+  &__item:last-child {
+    margin: 0px;
+  }
+  
+  &__link {
+  }
+  &__icon-search {
+  }
+  
+  &__icon-user {
+    width: 20px;
+    height: 24px;
+  }
+  
+  &__cart-icon {
+  }
+  
+  &__cart-count {
+    width: 6px;
+    height: 7px;
+    font-family: Muli-Bold;
+    font-size: 10px;
+    color: #000000;
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 16px;
+    height: 16px;
+    background: white;
+    padding: 6px 0px 0px 9px;
+  
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+
+
+

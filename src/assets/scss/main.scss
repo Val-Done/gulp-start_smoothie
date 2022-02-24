@@ -1,0 +1,41 @@
+@import "./abstracts/vars";
+@import "./_normalize";
+@import "./fonts";
+
+
+
+
+
+
+
+// Common
+@import "./global";
+@import "./logo";
+@import "./components/btn";
+@import "./components/button";
+
+// Header
+@import "./layout/header";
+@import "./layout/navigation";
+
+@import "./personal";
+@import "./_social";
+
+// Smothie
+@import "./smoothie-section";
+// About smoothie
+@import "./about-smoothie";
+// Products
+@import "./products";
+// Our Story
+@import "./ourStory";
+// Testimonials
+@import './testimonials';
+// Section Blog
+@import './blog-section';
+// Section Instagram
+@import './instagram';
+// Section Footer
+@import './footer';
+
+@import "./media";

@@ -1,0 +1,50 @@
+/* Set style for Our Story */
+.story {
+  display: flex;
+  margin-bottom: 160px;
+  &__title {
+    text-align: center;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f7ae3b;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    max-width: 512px;
+    margin: 0 0 0 310px;
+  }
+
+  &__text {
+    text-align: left;
+
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #1e1e1e;
+  }
+
+  &__btn {
+    width: 304px;
+    height: 63px;
+    background-color: #0aa566;
+    border-radius: 30px;
+    margin-top: 58px;
+  }
+  &__img-wrap {
+    display: flex;
+    justify-content: right;
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+}
+
+.btn--green {
+}

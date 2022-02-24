@@ -1,0 +1,49 @@
+/* Style for instagram */
+.instagram {
+  position: relative;
+
+  &__title::before {
+    display: block;
+    content: url(../images/Instagram/icon_instagram.png);
+    position: absolute;
+    left: 820px;
+    top: 5px;
+  }
+  
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #0aa566;
+  }
+  
+  &__wrap {
+    display: flex;
+  }
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .instagram__wrap-img {
+  }
+  
+  .instagram__wrap-img::after {
+    display: block;
+    content: url(../images/Instagram/icon__inst_wihte.png);
+    position: absolute;
+    right: 15px;
+    bottom: 20px;
+  }
+  
+  &__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+

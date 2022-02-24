@@ -1,0 +1,51 @@
+/* Style for section smoothies  */
+.smoothie {
+  padding: 100px 0;
+  &__title {
+    text-align: center;
+    color: #f7ae3b;
+  }
+  
+  
+  
+  &__text {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 1.94;
+    max-width: 905px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+  
+  &__wrap {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 2px;
+  }
+  
+  &__box {
+    text-align: center;
+    border-bottom: 1px solid #f6edde;
+    border-right: 1px solid #f6edde;
+    padding: 20px 0 0 0;
+  }
+  
+  &__box:nth-of-type(4n) {
+    border-right: none;
+  }
+  
+  &__box.smoothie__box:nth-last-of-type(-n + 4) {
+    border-bottom: none;
+  }
+  
+  &__img {
+    width: 79px;
+    height: 68px;
+  }
+}
+
+.title {
+  font-family: "Muli-ExtraBold";
+}

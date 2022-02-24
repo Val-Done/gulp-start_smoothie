@@ -1,0 +1,42 @@
+.social {
+  &__list::before {
+    content: "";
+    display: block;
+    width: 47px;
+    height: 2px;
+    margin: 10px 38px 0px 48px;
+    background: #ffd68f;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+
+  &__item:last-child {
+    margin: 0px;
+  }
+}
+
+.socila__link {
+}
+
+.social__icon {
+}

@@ -1,0 +1,104 @@
+/* Set style for Testimonials */
+.testimonials {
+  background-image: url(../images/Testimonials/sarah_a_bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  line-height: 40px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #521905;
+  height: 750px;
+  background-color: #64301b;
+  padding-top: 0px;
+  padding-bottom: 90px;
+  border: 1px solid red;
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  &__title {
+    margin: 117px -300px 0 0;
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f7ae3b;
+    margin-bottom: 270px;
+  }
+
+  &__title-color {
+    font-size: 50px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #f2612d;
+  }
+
+  &__title::after {
+    content: url(../images/Testimonials/dots_3973.png);
+    display: block;
+    top: -80px;
+    right: 60px;
+    position: absolute;
+  }
+
+  &__text {
+    display: block;
+    max-width: 455px;
+    text-align: center;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    line-height: 35px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  &__text::after {
+    display: block;
+    content: url(../images/Testimonials/img_girl.png);
+    position: absolute;
+    top: 40%;
+    right: 22%;
+  }
+
+  &__quote {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: 600;
+    font-style: italic;
+    color: #f7ae3b;
+  }
+
+  &__slider {
+    margin: 150px -300px 0 0;
+    display: block;
+  }
+
+  &__btn-right {
+    margin-right: 80px;
+    background-color: #692d1d;
+    border: none;
+  }
+
+  &__btn-right::before {
+    display: block;
+    content: url(../images/Testimonials/arrow__left.png);
+  }
+
+  &__btn-left {
+    background-color: #692d1d;
+    border: none;
+  }
+
+  &__btn-left::before {
+    display: block;
+    content: url(../images/Testimonials/arrow__right.png);
+  }
+}

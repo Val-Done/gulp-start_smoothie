@@ -1,0 +1,89 @@
+/* Set style for products */
+.products {
+  display: flex;
+  overflow-x: scroll;
+  justify-content: space-between;
+  margin-bottom: 120px;
+
+  &__wrap {
+    width: 25%;
+    height: 720px;
+    align-items: center;
+    position: relative;
+  }
+
+  &__wrap--choco {
+    @extend %products-wraps;
+    background-color: #602814;
+  }
+
+  &__img {
+    max-width: 119px;
+    width: 100%;
+    height: 303px;
+    object-fit: cover;
+    height: 303px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  &__size {
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  &__wrap--vegan {
+    @extend %products-wraps;
+    background-color: #188274;
+  }
+  &__wrap--ginger {
+    @extend %products-wraps;
+    background-color: #f7ae3b;
+  }
+  &__wrap--garlic {
+    @extend %products-wraps;
+    background-color: #c24419;
+  }
+}
+
+.btn__buy {
+  width: 207px;
+  height: 63px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  color: #fff;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.btn__buy::after {
+  content: url(../images/Products/arrow_products.png);
+  display: block;
+  position: absolute;
+  bottom: 17%;
+  right: 35%;
+}
+
+.btn--choco {
+  background-color: #672b13;
+}
+
+.btn--vegan {
+  background-color: #1c8772;
+}
+
+.btn--ginger {
+  background-color: #f9b13c;
+}
+
+.btn--garlic {
+  background-color: #c74918;
+}

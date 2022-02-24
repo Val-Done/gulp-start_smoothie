@@ -1,0 +1,619 @@
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 10px 0 10px;
+  }
+
+  /* Style for  header  */
+  .header{
+    &__logo {
+      padding: 0;
+      position: absolute;
+      right: 35%;
+      padding: 0;
+    }
+    &__menu {
+      position: fixed;
+      background-color: #0aa566;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 100px;
+      justify-content: flex-end;
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%);
+    }
+
+    &__burger-btn {
+      display: block;
+    }
+
+    &__right-block {
+      margin-bottom: 130px;
+      align-items: center;
+    }
+    &__menu.active {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transition: transf 0.5s;
+      -webkit-transition: transf 0.5s;
+      -moz-transition: transf 0.5s;
+      -ms-transition: transf 0.5s;
+      -o-transition: transf 0.5s;
+    }
+  }
+
+  .nav__list {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-bottom: 70px;
+  }
+
+  .nav__item {
+    margin-bottom: 30px;
+  }
+
+  .personal__list {
+    padding: 0px;
+  }
+
+  /* Style for Smoothie */
+  .smoothie {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &__wrap {
+      grid-template-columns: 250px 250px;
+    }
+  
+    &__box.smoothie__box:nth-last-of-type(-n + 4) {
+      border-bottom: 1px solid #f6edde;
+    }
+  
+    &__box:nth-of-type(2n) {
+      border-right: none;
+    }
+  
+    &__box:nth-of-type(8n) {
+      border-bottom: none;
+    }
+
+  }
+
+  
+
+  /* Style for About Smoothie */
+  .about__img {
+    max-width: 600px;
+    height: 700px;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+
+  .about__btn::after {
+    right: 42%;
+  }
+
+  /* Style for Products */
+  .products__wrap {
+    min-width: 100%;
+    overflow-x: scroll;
+  }
+
+  .btn__buy::after {
+    bottom: 17%;
+    right: 40%;
+  }
+
+  /* Style for Our Story */
+  .story {
+    display: flex;
+    margin-bottom: 160px;
+    flex-direction: column;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: flex-start;
+      max-width: 512px;
+      margin: 0 0 0 34px;
+    }
+  
+    &__img-wrap {
+      margin: 50px;
+    }
+  }
+
+  
+
+  /* Style for Testimonials */
+  .testimonials {
+    &__title::after {
+      content: url(../images/Testimonials/dots_3973.png);
+      display: block;
+      top: -80px;
+      right: 60px;
+      position: absolute;
+      display: none;
+    }
+  
+    &__title {
+      margin: 117px 0 0;
+      margin-bottom: 270px;
+    }
+  
+    &__text::after {
+      top: 25%;
+      right: 35%;
+    }
+  
+    &__slider {
+      margin: 100px 0px 0 0;
+      display: block;
+    }
+
+  }
+  
+
+  /* Style for Blog */
+  .blog {
+    &__title {
+      text-align: left;
+      margin: 100px 0 100px 40px;
+    }
+  
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      margin-left: 31px;
+    }
+  
+    &__img {
+      object-fit: cover;
+      margin-left: 0;
+    }
+  
+    &__article {
+      text-align: left;
+      margin-left: 31px;
+      padding-top: 90px;
+    }
+  
+    &__text {
+      margin-left: 74px;
+    }
+
+  }
+  
+
+  /* Style for Instagram */
+  .instagram__wrap {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .instagram__img {
+    object-fit: cover;
+    min-width: 360px;
+    min-height: 360px;
+    
+  }
+  .instagram__title::before {
+    left: 215px;
+    top: 5px;
+  }
+
+  /* Style for footer */
+  .footer__top {
+    padding: 150px 0px 100px;
+    position: relative;
+    background-color: #f6a93e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    position: absolute;
+    top: 5%;
+    left: auto;
+    width: 211px;
+    height: 72px;
+  }
+
+  .footer__info {
+    margin: 0px 0 0 0;
+  }
+
+  .footer__subscribe {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  
+  .header {
+    &__btn {
+      width: 220px;
+      height: 65px;
+      margin-top: 90px;
+    }
+  
+    
+  
+    &__burger-btn {
+      display: block;
+      background-image: url(../images/header/header-burger-.svg);
+      background-size: cover;
+      height: 30px;
+      width: 30px;
+      position: fixed;
+      top: 20px;
+      left: 270px;
+      z-index: 13;
+    }
+  
+    &__right-block {
+      margin-bottom: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__menu {
+      /* display: block; */
+      position: fixed;
+      background-color: #0aa566;
+      z-index: 2;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      padding-top: 70px;
+      justify-content: flex-end;
+      transform: translateX(-100%);
+    }
+  
+    &__logo {
+      padding: 0;
+      position: absolute;
+      right: 23%;
+    }
+    &__menu.active {
+      transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transition: transform 0.5s;
+    }
+
+  }
+  .btn {
+    border-radius: 35px;
+    font-size: 20px;
+    font-family: "Muli-ExtraBold", sans-serif;
+  }
+
+  .logo__img {
+    width: 170px;
+    height: 60px;
+  }
+
+  
+
+  .social__list::before {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .nav__item {
+    margin-bottom: 10px;
+  }
+
+  .personal__list {
+    padding: 0px;
+  }
+
+  
+
+  /* Style for about smoothie */
+  .smoothie__title {
+    font-family: "Muli-ExtraBold" serif;
+    font-size: 20px;
+  }
+
+  .smoothie__text {
+    text-align: center;
+    font-size: 9px;
+    letter-spacing: normal;
+    line-height: 1.94;
+    max-width: 905px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+
+  .smoothie__wrap {
+    grid-template-columns: 150px 150px;
+  }
+
+  .about__img {
+    max-width: 170px;
+    height: 200px;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+  }
+
+  .about__title {
+    font-size: 22px;
+  }
+
+  .about__title-part {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+
+  .about__title::after {
+    content: url(../images/About/lineunder-text.png);
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: -8%;
+  }
+
+  .about__list {
+    list-style-image: url(../images/About/Component.png);
+    margin: 0 0 0 40px;
+  }
+
+  .about__item {
+    font-size: 12px;
+  }
+
+  .about__item-thin {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .about__btn {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 0 0 16px;
+    line-height: 22px;
+    font-weight: 800;
+    width: 270px;
+    height: 45px;
+    color: #ffffff;
+    border: 2px solid #f8b231;
+    border-radius: 30px;
+    background-color: #118570;
+    margin: 0 0 100px 17px;
+  }
+
+  .about__btn::after {
+    right: 21%;
+  }
+
+  .products__title {
+    font-size: 16px;
+  }
+
+  .products__size {
+    font-size: 16px;
+  }
+
+  .btn__buy {
+    width: 175px;
+    height: 60px;
+  }
+
+  .btn__buy::after {
+    bottom: 18%;
+    right: 37%;
+  }
+
+  /* Style for Story */
+
+  .story__box {
+    margin: 0px 0 0 0px;
+  }
+
+  .story__title {
+    font-size: 22px;
+  }
+
+  .story__text {
+    font-size: 16px;
+  }
+
+  .story__btn {
+    width: 279px;
+    height: 55px;
+    margin-top: 27px;
+  }
+
+  .story__img-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .story__img {
+    max-width: 300px;
+    max-height: 240px;
+    object-fit: cover;
+  }
+
+  /* Style for Testimonials */
+
+  .testimonials__title {
+    margin: 30px 0 0;
+    margin-bottom: 278px;
+    font-size: 22px;
+  }
+
+  .testimonials__title-color {
+    font-size: 22px;
+  }
+
+  .testimonials__text::after {
+    top: 12%;
+    right: 14%;
+  }
+
+  .testimonials__text {
+    font-size: 15px;
+  }
+
+  .testimonials__quote {
+    font-size: 15px;
+  }
+
+  .testimonials__slider {
+    margin: 60px 0 0 0;
+  }
+
+  /* Style for Blog */
+
+  .blog__title {
+    /* text-align: left; */
+    margin: 50px 0 50px 40px;
+  }
+
+  .blog__title {
+    font-size: 22px;
+  }
+
+  .blog__wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+
+  .blog__article {
+    text-align: left;
+    margin-left: 11px;
+  }
+
+  .blog__article::before {
+    display: none;
+  }
+
+  .blog__article-subtitle {
+    font-size: 22px;
+  }
+
+  .blog__text {
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .blog__link-item {
+    font-size: 12px;
+  }
+
+  /* Style for Instagram */
+
+  .instagram__title {
+    font-size: 12px;
+  }
+
+  /* Style for Footer */
+
+  .footer__top {
+    padding: 100px 0px 50px 10px;
+    position: relative;
+    background-color: #f6a93e;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .footer__logo {
+    top: 3%;
+    left: 20%;
+  }
+
+  .info__link {
+    font-size: 15px;
+  }
+
+  .footer__payment {
+    margin-left: 0px;
+  }
+
+  .footer__title {
+    font-size: 22px;
+  }
+
+  .footer__payment {
+    max-width: 330px;
+  }
+
+  .footer__img {
+    margin: 0px 5px 15px 0px;
+  }
+
+  .footer__title-subscribe {
+    font-size: 16px;
+  }
+
+  .footer__subscribe {
+    max-width: 330px;
+  }
+
+  input {
+    /* border-style: none; */
+    font-size: 12px;
+    width: 225px;
+    height: 49px;
+    margin: 0px 40px 20px 0;
+  }
+
+  .footer__social {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .social__heading {
+    font-size: 11px;
+  }
+
+  .footer__social-list {
+    margin-left: 15px;
+  }
+
+  .footer__go-top {
+    left: 270px;
+  }
+
+  .footer__bottom-text {
+    display: none;
+  }
+}

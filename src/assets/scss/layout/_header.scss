@@ -1,0 +1,69 @@
+.header {
+  color: white;
+  background-image: url(../images/header/header-bg-img.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding-top: 100px;
+  &__container {
+    max-width: 1710px;
+    margin: 0 auto;
+  }
+
+  &__top {
+    position: relative;
+  }
+
+  &__burger-btn {
+    background-image: url(../images/header/header-burger-.svg);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: none;
+    z-index: 13;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__nav {
+    margin-right: 35px;
+  }
+
+  &__nav:last-child {
+    margin: 0px;
+  }
+  &-title {
+    visibility: hidden;
+  }
+
+  &__logo {
+    padding: 0;
+    position: absolute;
+    right: 45%;
+    padding: 0;
+  }
+  &__right-block {
+    display: flex;
+  }
+
+  &__personal {
+  }
+  &__btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn {
+    width: 270px;
+    height: 70px;
+    margin-top: 105px;
+  }
+}
